@@ -29,7 +29,7 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
         >
-          Crafting beautiful and functional web experiences
+          Creating beautiful and functional web experiences
         </motion.p>
 
         <div className="social-links">
