@@ -1,12 +1,22 @@
 import React from "react";
 import heroImage from "../assets/me.png";
-import { FaGithub, FaLinkedin, FaBehance, FaArrowDown } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaBehance, FaArrowDown, FaTrophy } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const recentContests = [
+    { title: "Regional Web Dev 2023", position: "1st Place" },
+    { title: "Hackathon 2023", position: "Finalist" }
+  ];
+
   return (
     <section className="hero">
-      <div className="hero-content">
+      <motion.div 
+        className="hero-content"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
         <motion.h1 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -23,7 +33,7 @@ const Hero = () => {
         >   
           <h4>Frontend Developer | Graphic Designer</h4>
         </motion.div>
-
+  
         <motion.p
           initial={{ opacity: 0 }} 
           animate={{ opacity: 1 }}
@@ -45,7 +55,7 @@ const Hero = () => {
         >
           View My Work <FaArrowDown className="arrow-icon" />
         </motion.button>
-      </div>
+      </motion.div>
 
       <motion.div 
         className="hero-image-container"

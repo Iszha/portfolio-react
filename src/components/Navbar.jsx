@@ -1,38 +1,50 @@
-import React from "react";
-import { FaHome, FaUser, FaCode, FaEnvelope } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { FaHome, FaUser, FaCode, FaEnvelope, FaMoon, FaSun } from "react-icons/fa";
 
 const Navbar = () => {
+  const [isDark, setIsDark] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <nav className="navbar">
       <div className="logo">C.C.</div>
       <ul className="nav-links">
         <li>
-          <a href="#home">
+          <Link to="/">
             <FaHome className="nav-icon" />
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#about">
+          <Link to="/about">
             <FaUser className="nav-icon" />
             About
-          </a>
+          </Link>
         </li>
         <li>   
-          <a href="#projects">
+          <Link to="/projects">
             <FaCode className="nav-icon" />
             Projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#contact">
+          <Link to="/contact">
             <FaEnvelope className="nav-icon" />
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
   );
 };
 
-export default Navbar; 
+export default Navbar;

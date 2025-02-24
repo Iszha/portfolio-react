@@ -362,3 +362,395 @@ html {
 .nav-links a:hover .nav-icon {
   transform: translateY(-2px);
 }
+
+.about-container h2 {
+  font-size: 2.5rem;
+  color: #2f4f2f;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.bio-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4b6043;
+}
+
+.achievements ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.achievements li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #4b6043;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-tag {
+  background: linear-gradient(45deg, #8aa05d, #4b6043);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.fact-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(75, 96, 67, 0.1);
+  border-radius: 15px;
+  color: #4b6043;
+}
+
+.fact-card svg {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+  
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-section {
+  padding: 120px 164px;
+  background: #ffffff;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Update media query for better responsiveness */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px;
+    width: 100vw;
+  }
+}
+
+
+.about-content {
+  display: grid;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.bio-section {
+  max-width: 800px;
+}
+
+.skills-section h3,
+.career-section h3,
+.fun-facts-section h3 {
+  color: #2f4f2f;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.fun-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 100px 80px;
+  }
+  
+  .fun-facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 80px 20px;
+  }
+  
+  .fun-facts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-title {
+  font-size: 3rem;
+  color: #2f4f2f;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(45deg, #8aa05d, #4b6043);
+  border-radius: 2px;
+}
+
+.bio-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #4b6043;
+  max-width: 800px;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 2rem;
+  background: rgba(75, 96, 67, 0.05);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.tech-card svg {
+  font-size: 3rem;
+}
+
+.tech-card span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2f4f2f;
+}
+
+.project-card {
+  background: rgba(75, 96, 67, 0.05);
+  padding: 1.5rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.project-card h4 {
+  color: #2f4f2f;
+  margin-bottom: 0.5rem;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: #8aa05d;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+.skill-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(45deg, #8aa05d, #4b6043);
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.skill-icon {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Add to existing styles */
+.navbar.scrolled {
+  background: rgba(75, 96, 67, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.contest-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(138, 160, 93, 0.1);
+  padding: 12px;
+  border-radius: 15px;
+  margin: 10px 0;
+}
+.trophy-icon {
+  color: #ffd700;
+}
+
+.goal-card {
+  background: linear-gradient(45deg, rgba(75, 96, 67, 0.05), rgba(138, 160, 93, 0.05));
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.goal-card p {
+  color: #2f4f2f;
+  font-size: 1.1rem;
+}
+
+.goal-icon {
+  color: #8aa05d;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: #e7f7ef;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add responsive design improvements */
+@media (max-width: 768px) {
+  .contests-showcase {
+    flex-direction: column;
+  }
+  
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fun-facts-section {
+  margin-top: 4rem;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.fun-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fun-fact-card {
+  background: linear-gradient(145deg, rgba(75, 96, 67, 0.05), rgba(138, 160, 93, 0.1));
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.fact-icon {
+  font-size: 2.5rem;
+  color: #8aa05d;
+  margin-bottom: 1rem;
+}
+
+.fun-fact-card h4 {
+  color: #2f4f2f;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.fun-fact-card p {
+  color: #4b6043;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.fun-fact-card:hover {
+  background: linear-gradient(145deg, rgba(75, 96, 67, 0.1), rgba(138, 160, 93, 0.2));
+}
+
+@media (max-width: 1024px) {
+  .fun-facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .fun-facts-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
