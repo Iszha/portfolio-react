@@ -16,7 +16,7 @@ const About = () => {
   ];
 
   const techStack = [
-    { icon: FaHtml5, name: "HTML5", color: "#E34F26" },
+    { icon: FaHtml5, name: "Isha", color: "#E34F26" },
     { icon: FaCss3Alt, name: "CSS3", color: "#1572B6" },
     { icon: FaJs, name: "JavaScript", color: "#F7DF1E" },
     { icon: FaReact, name: "React", color: "#61DAFB" },
