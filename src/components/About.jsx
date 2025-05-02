@@ -25,9 +25,15 @@ const About = () => {
   ];
 
   const careerGoals = [
+<<<<<<< HEAD
+    "Lead Frontend Developer within 2 years",
+    "Contribute to Open Source Projects",
+    "Mentor Junior Developers"
+=======
     { icon: <FaBriefcase />, text: "Frontend Developer within 1 years" },
     { icon: <FaBookReader />, text: "Contribute to Open Source Projects" },
     { icon: <FaLightbulb />, text: "Created a friendly UI/UX design" },
+>>>>>>> origin/main
   ];
 
   const currentProjects = [
@@ -69,10 +75,17 @@ const About = () => {
             transition={{ delay: 0.2 }}
           >
             <p>
+<<<<<<< HEAD
+              As a passionate frontend developer, I specialize in creating intuitive and
+              performant web applications. With a strong foundation in modern JavaScript
+              frameworks and a keen eye for design, I transform complex problems into
+              elegant solutions.
+=======
               Hi, I'm Crisha Campomayor a 22 years old, 4th Year IT student at Western Mindanao State University. 
               Passionate about frontend development, I enjoy creating visually appealing and user-friendly web interfaces. 
               During my studies, I've grind my skills in HTML, CSS, JavaScript and modern frameworks to build flawlessly digital experiences.
               I am eager to continue learning and applying my knowledge to real-world projects. Feel free to explore my projects and connect with me.
+>>>>>>> origin/main
             </p>
           </motion.div>
 
@@ -101,8 +114,13 @@ const About = () => {
                   className="goal-card"
                   whileHover={{ scale: 1.02 }}
                 >
+<<<<<<< HEAD
+                  <FaBriefcase />
+                  <p>{goal}</p>
+=======
                   <span className="goal-icon">{goal.icon}</span>
                   <p>{goal.text}</p>
+>>>>>>> origin/main
                 </motion.div>
               ))}
             </div>
