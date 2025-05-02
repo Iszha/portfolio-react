@@ -12,7 +12,11 @@ body {
   background-color: #f6f8ed;
   line-height: 1.6;
 }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> origin/main
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -40,9 +44,13 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #4b6043;
   margin-bottom: 10px;
+<<<<<<< HEAD
 }
 
 .navbar .logo {
+=======
+}.navbar .logo {
+>>>>>>> origin/main
   font-size: 28px;
   font-weight: 700;
   color: #e7f7ef;
@@ -70,7 +78,10 @@ body {
   color: #d4eac8;
   text-decoration: underline;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 .hero {
   display: flex;
   align-items: center;
@@ -91,6 +102,7 @@ body {
 .hero-content h1 {
   font-size: 45px;
 
+<<<<<<< HEAD
   .hero-image img {
     max-width: 100%;
     height: auto;
@@ -99,6 +111,15 @@ body {
     transition: transform 0.3s ease;
   }
 
+=======
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+>>>>>>> origin/main
   font-weight: 700;
   color: #2f4f2f;
   margin-bottom: 10px;
@@ -234,7 +255,11 @@ body {
 .typing-text h4 {
   border-right: 3px solid #4b6043;
   animation: typing 3.5s steps(40, end) forwards,
+<<<<<<< HEAD
     blink-caret 0.75s step-end 8;
+=======
+             blink-caret 0.75s step-end 8;
+>>>>>>> origin/main
   white-space: nowrap;
   overflow: hidden;
   animation-fill-mode: forwards;
@@ -270,6 +295,7 @@ body {
 }
 
 @keyframes bounce {
+<<<<<<< HEAD
 
   0%,
   20%,
@@ -283,23 +309,37 @@ body {
     transform: translateY(-10px);
   }
 
+=======
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+>>>>>>> origin/main
   60% {
     transform: translateY(-5px);
   }
 }
 
 @keyframes typing {
+<<<<<<< HEAD
   from {
     width: 0
   }
 
   to {
+=======
+  from { width: 0 }
+  to { 
+>>>>>>> origin/main
     width: 100%;
     border-right: none;
   }
 }
 
 @keyframes blink-caret {
+<<<<<<< HEAD
 
   from,
   to {
@@ -309,6 +349,10 @@ body {
   50% {
     border-color: #4b6043
   }
+=======
+  from, to { border-color: transparent }
+  50% { border-color: #4b6043 }
+>>>>>>> origin/main
 }
 
 /* Add a smooth scroll behavior */
@@ -321,7 +365,11 @@ html {
   .social-links {
     justify-content: center;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> origin/main
   .hero-button {
     margin: 0 auto;
   }
@@ -452,7 +500,11 @@ html {
   .about-section {
     padding: 60px 20px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> origin/main
   .facts-grid {
     grid-template-columns: 1fr;
   }
@@ -482,6 +534,7 @@ html {
   }
 }
 
+<<<<<<< HEAD
 .about-section {
   padding: 120px 164px;
   background: #ffffff;
@@ -494,6 +547,8 @@ html {
   margin: 0 auto;
   width: 100%;
 }
+=======
+>>>>>>> origin/main
 
 .about-content {
   display: grid;
@@ -505,12 +560,24 @@ html {
   max-width: 800px;
 }
 
+<<<<<<< HEAD
 .skills-section,
 .career-section,
 .fun-facts-section {
   width: 100%;
 }
 
+=======
+.skills-section h3,
+.career-section h3,
+.fun-facts-section h3 {
+  color: #2f4f2f;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+>>>>>>> origin/main
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -536,7 +603,11 @@ html {
   .about-section {
     padding: 100px 80px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> origin/main
   .fun-facts-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -546,7 +617,11 @@ html {
   .about-section {
     padding: 80px 20px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> origin/main
   .fun-facts-grid {
     grid-template-columns: 1fr;
   }
@@ -624,7 +699,11 @@ html {
   .tech-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> origin/main
   .section-title {
     font-size: 2.5rem;
   }
@@ -670,7 +749,10 @@ html {
   border-radius: 15px;
   margin: 10px 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 .trophy-icon {
   color: #ffd700;
 }
@@ -684,6 +766,22 @@ html {
   gap: 15px;
 }
 
+<<<<<<< HEAD
+=======
+.goal-card p {
+  color: #2f4f2f;
+  font-size: 1.1rem;
+}
+
+.goal-icon {
+  color: #8aa05d;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+
+>>>>>>> origin/main
 .theme-toggle {
   background: none;
   border: none;
@@ -703,7 +801,11 @@ html {
   .contests-showcase {
     flex-direction: column;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> origin/main
   .goals-grid {
     grid-template-columns: 1fr;
   }
@@ -771,6 +873,7 @@ html {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+<<<<<<< HEAD
 }
 
 /* Project Section Styles */
@@ -999,3 +1102,6 @@ html {
 
 /* Contact Section Styles */
 
+=======
+}
+>>>>>>> origin/main

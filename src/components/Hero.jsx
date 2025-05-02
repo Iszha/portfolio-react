@@ -42,6 +42,7 @@ const Hero = () => {
           Creating beautiful and functional web experiences
         </motion.p>
 
+<<<<<<< HEAD
         <motion.div className="contests-showcase">
           {recentContests.map((contest, index) => (
             <motion.div
@@ -59,6 +60,8 @@ const Hero = () => {
           ))}
         </motion.div>
 
+=======
+>>>>>>> origin/main
         <div className="social-links">
           <motion.a whileHover={{ scale: 1.2 }} href="https://github.com" target="_blank"><FaGithub /></motion.a>
           <motion.a whileHover={{ scale: 1.2 }} href="https://linkedin.com" target="_blank"><FaLinkedin /></motion.a>
