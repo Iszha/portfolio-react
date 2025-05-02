@@ -43,7 +43,7 @@ const Project = () => {
       subtitle: "React-based Calculator App",
       description: "A comprehensive scientific calculator built with React and Vite. This application offers standard arithmetic operations along with advanced scientific functions, featuring a clean and intuitive user interface with responsive design.",
       tech: ["HTML", "CSS", "JavaScript", "React", "Vite"],
-      github: "https://github.com/Iszha/react-scical",
+      github: "https://github.com/Iszha/react-scical",   
       live: "https://ishascical.netlify.app",
       color: "#61DAFB",
       image: "/scical.jpeg"
