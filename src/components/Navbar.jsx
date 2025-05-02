@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-import { FaHome, FaUser, FaCode, FaEnvelope, FaMoon, FaSun, FaBook } from "react-icons/fa";
-=======
 import { FaHome, FaUser, FaCode, FaEnvelope, FaMoon, FaSun } from "react-icons/fa";
->>>>>>> origin/main
 
 const Navbar = () => {
   const [isDark, setIsDark] = useState(false);
@@ -19,11 +15,7 @@ const Navbar = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-=======
     <nav className="navbar">
->>>>>>> origin/main
       <div className="logo">C.C.</div>
       <ul className="nav-links">
         <li>
@@ -45,15 +37,6 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-<<<<<<< HEAD
-          <Link to="/blog">
-            <FaBook className="nav-icon" />
-            Blog
-          </Link>
-        </li>
-        <li>
-=======
->>>>>>> origin/main
           <Link to="/contact">
             <FaEnvelope className="nav-icon" />
             Contact
