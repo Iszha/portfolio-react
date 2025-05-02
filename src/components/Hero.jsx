@@ -42,6 +42,23 @@ const Hero = () => {
           Creating beautiful and functional web experiences
         </motion.p>
 
+        <motion.div className="contests-showcase">
+          {recentContests.map((contest, index) => (
+            <motion.div
+              key={index}
+              className="contest-badge"
+              whileHover={{ scale: 1.05 }}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: index * 0.2 }}
+            >
+              <FaTrophy className="trophy-icon" />
+              <span>{contest.title}</span>
+              <span className="position">{contest.position}</span>
+            </motion.div>
+          ))}
+        </motion.div>
+
         <div className="social-links">
           <motion.a whileHover={{ scale: 1.2 }} href="https://github.com" target="_blank"><FaGithub /></motion.a>
           <motion.a whileHover={{ scale: 1.2 }} href="https://linkedin.com" target="_blank"><FaLinkedin /></motion.a>
