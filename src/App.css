@@ -990,3 +990,199 @@ html {
 
 /* Contact Section Styles */
 
+/* Experience Section Styles */
+.experience-section {
+  padding: 120px 164px;
+  background: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.experience-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: rgba(75, 96, 67, 0.2);
+}
+
+.experience-card {
+  background: rgba(75, 96, 67, 0.05);
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-left: 60px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(75, 96, 67, 0.1);
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #8aa05d;
+  border: 4px solid #ffffff;
+  z-index: 1;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #8aa05d, #4b6043);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.experience-info h3 {
+  font-size: 1.5rem;
+  color: #2f4f2f;
+  margin-bottom: 0.3rem;
+}
+
+.experience-info h4 {
+  font-size: 1.2rem;
+  color: #4b6043;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.experience-duration {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #8aa05d;
+  font-size: 0.9rem;
+}
+
+.duration-icon {
+  font-size: 1rem;
+}
+
+.experience-body {
+  color: #4b6043;
+}
+
+.experience-body p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.responsibilities h5, .tech-used h5 {
+  font-size: 1.1rem;
+  color: #2f4f2f;
+  margin-bottom: 0.8rem;
+}
+
+.responsibilities ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.responsibilities li {
+  margin-bottom: 0.5rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tech-tag {
+  background: linear-gradient(45deg, #8aa05d, #4b6043);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .experience-section {
+    padding: 100px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 80px 20px;
+  }
+  
+  .experience-card {
+    padding: 1.5rem;
+    margin-left: 40px;
+  }
+  
+  .experience-card::before {
+    left: -20px;
+  }
+  
+  .experience-timeline::before {
+    left: 20px;
+  }
+  
+  .company-logo {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .experience-info h3 {
+    font-size: 1.3rem;
+  }
+  
+  .experience-info h4 {
+    font-size: 1.1rem;
+  }
+  
+  .tech-tags {
+    gap: 0.5rem;
+  }
+  
+  .tech-tag {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}

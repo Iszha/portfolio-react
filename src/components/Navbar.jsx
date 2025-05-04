@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaHome, FaUser, FaCode, FaEnvelope, FaMoon, FaSun, FaBook } from "react-icons/fa";
+import { FaHome, FaUser, FaCode, FaEnvelope, FaMoon, FaSun, FaBook, FaBriefcase } from "react-icons/fa";
 
 const Navbar = () => {
   const [isDark, setIsDark] = useState(false);
@@ -28,6 +28,12 @@ const Navbar = () => {
           <Link to="/about">
             <FaUser className="nav-icon" />
             About
+          </Link>
+        </li>
+        <li>
+          <Link to="/experience">
+            <FaBriefcase className="nav-icon" />
+            Experience
           </Link>
         </li>
         <li>   
