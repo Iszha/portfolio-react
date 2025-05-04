@@ -4,9 +4,11 @@ import {
   FaHtml5, 
   FaCss3Alt, 
   FaJs, 
-  FaReact
+  FaReact,
+  FaBootstrap,
+  FaPhp
 } from 'react-icons/fa';
-import { SiVite } from 'react-icons/si';
+import { SiVite, SiMysql } from 'react-icons/si';
 import '../styles/Project.css';
 
 const Project = () => {
@@ -31,13 +33,26 @@ const Project = () => {
       'CSS': <FaCss3Alt style={{ color: '#1572B6' }} />,
       'JavaScript': <FaJs style={{ color: '#F7DF1E' }} />,
       'React': <FaReact style={{ color: '#61DAFB' }} />,
-      'Vite': <SiVite style={{ color: '#646CFF' }} />
+      'Vite': <SiVite style={{ color: '#646CFF' }} />,
+      'Bootstrap': <FaBootstrap style={{ color: '#7952B3' }} />,
+      'PHP': <FaPhp style={{ color: '#777BB4' }} />,
+      'MySQL': <SiMysql style={{ color: '#4479A1' }} />
     };
     return icons[tech] || null;
   };
 
   // Updated projects data with Scientific Calculator and Pokemon projects
   const projects = [
+    {
+      title: "Southcom National High School",
+      subtitle: "Information Management System",
+      description: "A comprehensive information management system developed for Southcom National High School. This system streamlines administrative processes, manages student records, tracks academic performance, and facilitates communication between staff, students, and parents through an intuitive web interface.",
+      tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
+      github: "#",
+      live: "https://snhssims.online",
+      color: "#4479A1",
+      image: "/snhs.jpeg"
+    },
     {
       title: "Scientific Calculator",
       subtitle: "React-based Calculator App",
