@@ -48,7 +48,7 @@ const BlogPage = () => {
     },
     {
       id: 3,
-      title: "Day 3: Exploring History at Museo ni Manuel L. Quezon and the Presidential Cars Museum",
+      title: "Day 3: Exploring History at Museo ni Manuel L. Quezon, Museum of Natural History and the Presidential Cars Museum",
       date: "April 9, 2025",
       category: "Historical",
       readTime: "6 min read",
@@ -125,7 +125,7 @@ const BlogPage = () => {
         "/baguio (7).jpeg",
         "/baguio (8).jpeg",
         "/baguio (9).jpeg",
-        ""
+        "/baguio (10).jpeg"
       ]
     },
     {
