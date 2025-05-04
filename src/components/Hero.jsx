@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const recentContests = [
-    { title: "Regional Web Dev 2023", position: "1st Place" },
-    { title: "Hackathon 2023", position: "Finalist" }
   ];
 
   return (
@@ -60,9 +58,8 @@ const Hero = () => {
         </motion.div>
 
         <div className="social-links">
-          <motion.a whileHover={{ scale: 1.2 }} href="https://github.com" target="_blank"><FaGithub /></motion.a>
-          <motion.a whileHover={{ scale: 1.2 }} href="https://linkedin.com" target="_blank"><FaLinkedin /></motion.a>
-          <motion.a whileHover={{ scale: 1.2 }} href="https://behance.net" target="_blank"><FaBehance /></motion.a>
+          <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/Iszha" target="_blank"><FaGithub /></motion.a>
+          <motion.a whileHover={{ scale: 1.2 }} href="https://linkedin.com/in/crisha-campomayor-b87887359" target="_blank"><FaLinkedin /></motion.a>
         </div>
 
         <motion.button 
