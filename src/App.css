@@ -1186,3 +1186,86 @@ html {
     font-size: 0.8rem;
   }
 }
+
+/* Improved hamburger menu styles for better mobile responsiveness */
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  color: #e7f7ef;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px; /* Fixed width instead of percentage */
+    height: auto; /* Auto height instead of 100vh */
+    max-height: 100vh;
+    background: rgba(75, 96, 67, 0.98);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0 20px 0; /* Top padding to avoid navbar overlap */
+    transition: right 0.3s ease;
+    z-index: 1000;
+    border-bottom-left-radius: 10px;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-icon {
+    font-size: 16px;
+    min-width: 20px; /* Ensure icons align properly */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-links {
+    width: 220px; /* Even smaller for very small screens */
+  }
+  
+  .navbar {
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .nav-links a {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  
+  .nav-icon {
+    font-size: 14px;
+  }
+}
