@@ -68,7 +68,7 @@ const Project = () => {
       subtitle: "PokeAPI Integration",
       description: "An interactive Pokemon application that leverages the PokeAPI to display detailed information about Pokemon. Users can browse through different Pokemon, view their stats, abilities, and more in a visually appealing interface built with React and Vite.",
       tech: ["HTML", "CSS", "JavaScript", "React", "Vite"],
-      github: "https://github.com/your-username/pokemon-explorer",
+      github: "https://github.com/Eixaax/Pokemoncchi",
       live: "https://pokemongew.netlify.app",
       color: "#EF5350",
       image: "/pkmn.jpeg"
