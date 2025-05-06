@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaHome, FaUser, FaCode, FaEnvelope, FaMoon, FaSun, FaBook, FaBriefcase, FaBars, FaTimes } from "react-icons/fa";
+import { FaHome, FaUser, FaCode, FaEnvelope, FaMoon, FaSun, FaBook, FaBriefcase, FaBars, FaTimes, FaCertificate } from "react-icons/fa";
 
 const Navbar = () => {
   const [isDark, setIsDark] = useState(false);
@@ -50,6 +50,12 @@ const Navbar = () => {
           <Link to="/projects" onClick={() => setIsMenuOpen(false)}>
             <FaCode className="nav-icon" />
             Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="/certifications" onClick={() => setIsMenuOpen(false)}>
+            <FaCertificate className="nav-icon" />
+            Certifications
           </Link>
         </li>
         <li>
