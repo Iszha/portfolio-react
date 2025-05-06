@@ -7,6 +7,7 @@ import Projects from "./components/Project";
 import Contact from "./components/Contact";
 import BlogPage from "./components/BlogPage";
 import Experience from "./components/Experience";
+import Certification from "./components/Certification";
 import "./App.css";
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/certifications" element={<Certification />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<BlogPage />} />
       </Routes>
